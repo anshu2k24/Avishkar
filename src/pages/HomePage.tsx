@@ -101,7 +101,7 @@ const HomePage = () => {
                 { city: "Delhi", count: "1,800+ PGs", image: "https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
                 { city: "Mumbai", count: "2,000+ PGs", image: "https://images.unsplash.com/photo-1566552881560-0be862a7c445?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
                 { city: "Pune", count: "1,200+ PGs", image: "https://images.unsplash.com/photo-1558818061-55d83a8b6a25?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
-                { city: "Hyderabad", count: "1,100+ PGs", image: "https://images.unsplash.com/photo-1626196340145-5769eb62ca4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+                { city: "Ahmedabad", count: "1,100+ PGs", image: "https://images.unsplash.com/photo-1626196340145-5769eb62ca4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
               ].map((cityData, index) => (
                 <Link 
                   to={`/pg-list?city=${cityData.city}`} 
