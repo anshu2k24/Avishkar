@@ -18,9 +18,10 @@ const SearchBar = ({ className = "" }: { className?: string }) => {
     <div className={`bg-white rounded-xl shadow-lg p-4 md:p-6 ${className}`}>
       <form onSubmit={handleSearch} className="flex flex-col md:flex-row md:items-center gap-4">
         {/* Location Input */}
-        <div className="flex-1 relative">
-          <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">
-            <MapPin size={20} />
+        <div className="flex-1 relative text-black ">
+          <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 flex justify-between items-center">
+            <MapPin size={20} className="cursor-pointer" />
+            
           </div>
           <input
             type="text"
@@ -29,23 +30,27 @@ const SearchBar = ({ className = "" }: { className?: string }) => {
             value={location}
             onChange={(e) => setLocation(e.target.value)}
             required
+            
           />
+          
         </div>
 
         {/* Property Type Selector */}
         <div className="md:w-48">
-          <div className="relative">
-            <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">
-              <Home size={20} />
-            </div>
+          <div className="relative text-black">
+            <div className="absolute left-3 top-1/2 transform -translate-y-1/2  text-gray-400">
+              <Home size={20} className="cursor-pointer" />
+            </div >
             <select
               className="input-primary pl-10 appearance-none"
               value={propertyType}
               onChange={(e) => setPropertyType(e.target.value)}
             >
-              <option value="pg">PG</option>
+              <div className="text-black cursor-pointer"> 
+              <option value="pg" >PG</option>
               <option value="flat">Flat</option>
               <option value="hostel">Hostel</option>
+              </div>
             </select>
           </div>
         </div>

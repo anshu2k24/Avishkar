@@ -21,7 +21,7 @@ const HeroSection = () => {
               Explore PGs <ArrowRight size={18} className="ml-2" />
             </Link>
             <Link to="/add-pg" className="btn-secondary inline-flex items-center">
-              List Your Property
+              List Your PGs
             </Link>
           </div>
         </div>

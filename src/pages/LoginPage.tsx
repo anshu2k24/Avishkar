@@ -87,7 +87,7 @@ const LoginPage = () => {
         <div className="container-custom">
           <div className="max-w-md mx-auto">
             <div className="text-center mb-8">
-              <h1 className="text-3xl font-bold text-gray-900">Welcome to DwellNest</h1>
+              <h1 className="text-3xl font-bold text-gray-900">Welcome to Roomigo</h1>
               <p className="text-gray-600 mt-2">
                 {activeTab === "login" 
                   ? "Sign in to access your account" 

@@ -5,7 +5,7 @@ import HeroSection from "@/components/HeroSection";
 import PropertyCard from "@/components/PropertyCard";
 import { properties } from "@/data/properties";
 import { Link } from "react-router-dom";
-import { MapPin, Home, Users, Coffee, Car, Wifi, Search, ArrowRight } from "lucide-react";
+import { MapPin, Home, Users, Coffee, Car, Wifi, Search, ArrowRight, CameraIcon, CctvIcon } from "lucide-react";
 
 const HomePage = () => {
   // Get featured properties
@@ -55,7 +55,7 @@ const HomePage = () => {
         <section className="py-16">
           <div className="container-custom">
             <div className="text-center max-w-2xl mx-auto mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">How DwellNest Works</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">How Roomigo Works</h2>
               <p className="text-gray-600">Our simple 3-step process helps you find and book your ideal PG accommodation</p>
             </div>
 
@@ -130,16 +130,16 @@ const HomePage = () => {
         <section className="py-16">
           <div className="container-custom">
             <div className="text-center max-w-2xl mx-auto mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Common Amenities</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Wide Range Facilities</h2>
               <p className="text-gray-600">Most of our PG accommodations come with these essential amenities</p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
                 { icon: <Wifi className="w-8 h-8" />, title: "High-Speed WiFi", description: "Stay connected with fast internet access." },
-                { icon: <Coffee className="w-8 h-8" />, title: "Meals Included", description: "Enjoy nutritious home-cooked meals." },
-                { icon: <Car className="w-8 h-8" />, title: "Parking Space", description: "Safe parking for your vehicles." },
-                { icon: <MapPin className="w-8 h-8" />, title: "Prime Locations", description: "Properties near major workplaces." },
+                { icon: <Coffee className="w-8 h-8" />, title: "Meals Included", description: "Delicious, nutritious meals served daily." },
+                { icon: <CctvIcon className="w-8 h-8" />, title: "Security", description: "Safe PGs with round-the-clock security and CCTV." },
+                { icon: <MapPin className="w-8 h-8" />, title: "Prime Locations", description: "PGs near to your colleges." },
               ].map((amenity, index) => (
                 <div key={index} className="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center text-center">
                   <div className="text-pgblue-500 mb-4">{amenity.icon}</div>
@@ -157,7 +157,7 @@ const HomePage = () => {
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl font-bold mb-4">Ready to Find Your Perfect PG?</h2>
               <p className="text-xl text-pgblue-100 mb-8">
-                Join thousands of satisfied tenants who found their ideal PG accommodation with DwellNest
+                Join thousands of satisfied tenants who found their ideal PG accommodation with Roomigo
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Link to="/pg-list" className="bg-white text-pgblue-700 hover:bg-pgblue-100 px-8 py-3 rounded-lg shadow-md transition font-medium">

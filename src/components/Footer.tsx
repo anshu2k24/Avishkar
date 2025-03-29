@@ -10,10 +10,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Section */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">DwellNest</h3>
+            <h3 className="text-xl font-semibold mb-4">Roomigo</h3>
             <p className="text-gray-300 mb-4">
-              Find your perfect PG accommodation with DwellNest. Browse verified properties, 
-              book instantly, and connect with property owners.
+             Find the best PGs nearby with detailed listings and real-time availability.Compare options based on price, amenities, and location.
+             Make informed decisions with user reviews and ratings.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-white transition">
@@ -75,15 +75,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <MapPin size={20} className="mt-1 flex-shrink-0" />
-                <span className="text-gray-300">123 Main Street, Bangalore, India</span>
+                <span className="text-gray-300 cursor-pointer">Dayananda Sagar College of Engineering, Bangalore, India</span>
               </li>
               <li className="flex items-start space-x-3">
                 <Phone size={20} className="mt-1 flex-shrink-0" />
-                <span className="text-gray-300">+91 9876543210</span>
+                <span className="text-gray-300">+91 987xxxxxxx</span>
               </li>
               <li className="flex items-start space-x-3">
                 <Mail size={20} className="mt-1 flex-shrink-0" />
-                <span className="text-gray-300">contact@dwellnest.com</span>
+                <span className="text-gray-300 cursor-pointer">contact@roomigo.com</span>
               </li>
             </ul>
           </div>
@@ -93,7 +93,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-10 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} DwellNest. All rights reserved.
+              &copy; {new Date().getFullYear()} Roomigo. All rights reserved.
             </p>
             <div className="flex space-x-4">
               <Link to="/privacy" className="text-gray-400 text-sm hover:text-white transition">
