@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Menu, X, MapPin, User, LogOut } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/contexts/AuthContext";
-
+import Logo from "./../components/logo/logo.jpg"
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { currentUser, logout, isOwner } = useAuth();
@@ -18,12 +18,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-sm sticky top-0 z-50">
+    <nav className="bg-white shadow-sm sticky   top-0 z-50">
       <div className="container-custom py-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center  justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-pgblue-500">Dwell<span className="text-pgblue-400">Nest</span></span>
+          <Link to="/" className="flex items-center  w-[9%] md:w-[5%]  h-[10px]  space-x-2">
+            <img src={Logo} alt="" />
           </Link>
 
           {/* Desktop Menu */}
@@ -50,8 +50,8 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-4">
             {currentUser ? (
               <>
-                <div className="flex items-center space-x-2">
-                  <User size={20} className="text-gray-700" />
+                <div className="flex items-center  space-x-2">
+                  <User size={20} className="text-gray-700 border-2 border-black rounded-lg" />
                   <span className="text-gray-700">{currentUser.email?.split('@')[0]}</span>
                 </div>
                 <Button 
@@ -62,6 +62,7 @@ const Navbar = () => {
                   <LogOut size={18} />
                   <span>Logout</span>
                 </Button>
+
               </>
             ) : (
               <>
